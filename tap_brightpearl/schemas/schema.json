@@ -1,0 +1,3654 @@
+{
+  "streams": [
+    {
+      "stream": "brand",
+      "tap_stream_id": "brand",
+      "schema": {
+        "properties": {
+          "brandId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "brandName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "brandId"
+      ],
+      "replication_key": "brandId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "product",
+      "tap_stream_id": "product",
+      "schema": {
+        "properties": {
+          "productId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "productName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "SKU": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "barcode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "EAN": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "UPC": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "ISBN": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "MPN": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "stockTracked": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "salesChannelName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "brightpearlCategoryCode": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "productGroupId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "brandId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "productTypeId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "productStatus": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "primarySupplierId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "productId"
+      ],
+      "replication_key": "productId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "product_with_custom",
+      "tap_stream_id": "product_with_custom",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "brandId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "productTypeId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "identity": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "productGroupId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "featured": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "stock": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "financialDetails": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "salesChannels": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "composition": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "warehouses": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "nominalCodeStock": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "nominalCodePurchases": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "nominalCodeSales": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "seasonIds": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "reporting": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "status": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "salesPopupMessage": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "warehousePopupMessage": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "version": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "variations": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "primarySupplierId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "customFields": {
+            "type": [
+              "null",
+              "object"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "product_price",
+      "tap_stream_id": "product_price",
+      "schema": {
+        "properties": {
+          "productId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priceLists": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "productId"
+      ],
+      "replication_key": "productId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "brightpearl_category",
+      "tap_stream_id": "brightpearl_category",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "parentId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "active": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdById": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "updatedBy": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "collection",
+      "tap_stream_id": "collection",
+      "schema": {
+        "properties": {
+          "collectionId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "collectionName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "brandId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "collectionId"
+      ],
+      "replication_key": "collectionId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "option",
+      "tap_stream_id": "option",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "option_value",
+      "tap_stream_id": "option_value",
+      "schema": {
+        "properties": {
+          "optionId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "optionName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "optionValueId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "optionValueName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "optionId"
+      ],
+      "replication_key": "optionId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "price_list",
+      "tap_stream_id": "price_list",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currencyCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currencySymbol": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currencyId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priceListTypeCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "gross": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "custom_field_meta_data",
+      "tap_stream_id": "custom_field_meta_data",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "customFieldType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "required": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "product_type",
+      "tap_stream_id": "product_type",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "channel_brand",
+      "tap_stream_id": "channel_brand",
+      "schema": {
+        "properties": {
+          "channelBrandId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "addressBookId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "companyName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "companyNumber": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "telephone": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "emailAddress": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "accountingEmailAddress": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "templates": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "shippingTemplates": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "financialDetails": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "logo": {
+            "type": [
+              "null",
+              "object"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "channelBrandId"
+      ],
+      "replication_key": "channelBrandId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "channel",
+      "tap_stream_id": "channel",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "channelTypeId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "defaultWarehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "contactGroupId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "defaultPriceListId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "channelBrandId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "warehouseIds": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "showInChannelMenu": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "integrationDetail": {
+            "type": [
+              "null",
+              "object"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_search",
+      "tap_stream_id": "order_search",
+      "schema": {
+        "properties": {
+          "orderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "orderTypeId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "contactId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "orderStatusId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "orderStockStatusId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdById": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "customerRef": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderPaymentStatusId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "parentOrderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "orderShippingStatusId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "externalRef": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "installedIntegrationInstanceId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "staffOwnerContactId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "taxDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "departmentId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "deliveryDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "orderId"
+      ],
+      "replication_key": "orderId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "orders",
+      "tap_stream_id": "orders",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "parentOrderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "orderTypeCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "reference": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "version": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "state": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "orderStatus": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "tax": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "orderPaymentStatus": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "stockStatusCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "allocationStatusCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "shippingStatusCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "placedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdById": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priceListId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priceModeCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "delivery": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "invoices": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currency": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "totalValue": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "assignment": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "parties": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "orderRows": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "acknowledged": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "costPriceListId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "historicalOrder": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "externalRef": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "installedIntegrationInstanceId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "closedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "originalInvoiceDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "customFields": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "nullCustomFields": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "sales_order",
+      "tap_stream_id": "sales_order",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "customer": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "billing": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "ref": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "externalRef": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "placedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "taxDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "parentId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "statusId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "channelId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "staffOwnerId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "projectId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "leadSourceId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "teamId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priceListId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priceModeCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currency": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "delivery": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "rows": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "total": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "stockStatusCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "installedIntegrationInstanceId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "createdBy": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "customerId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "sales_credit",
+      "tap_stream_id": "sales_credit",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "customer": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "billing": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "ref": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "placedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "taxDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "parentId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "statusId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "channelId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "staffOwnerId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "projectId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "leadSourceId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "teamId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priceListId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priceModeCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currency": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "delivery": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "rows": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "total": {
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "stockStatusCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdBy": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "customerId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "externalRef": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "installedIntegrationInstanceId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_type",
+      "tap_stream_id": "order_type",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_status",
+      "tap_stream_id": "order_status",
+      "schema": {
+        "properties": {
+          "statusId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderTypeCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "sortOrder": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "disabled": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "visible": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "color": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "remindAfterDays": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "alertEmails": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "emailContent": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "batchProcess": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "state": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "statusId"
+      ],
+      "replication_key": "statusId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_stock_status",
+      "tap_stream_id": "order_stock_status",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_shipping_status",
+      "tap_stream_id": "order_shipping_status",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_custom_field_meta_data_purchase",
+      "tap_stream_id": "order_custom_field_meta_data_purchase",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "customFieldType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "required": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_custom_field_meta_data_sale",
+      "tap_stream_id": "order_custom_field_meta_data_sale",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "customFieldType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "required": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "purchase_order_landed_cost",
+      "tap_stream_id": "purchase_order_landed_cost",
+      "schema": {
+        "properties": {
+          "orderRowId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "supplierName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "weight": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "sku": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "productName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "quantity": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "volume": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "productPrice": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "productId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "currentLandedCosts": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "orderRowId"
+      ],
+      "replication_key": "orderRowId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_note",
+      "tap_stream_id": "order_note",
+      "schema": {
+        "properties": {
+          "orderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "noteId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "contactId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "noteText": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "isPublic": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "dateAdded": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "addedBy": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "orderStatusId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "orderId"
+      ],
+      "replication_key": "orderId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "location",
+      "tap_stream_id": "location",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "zoneId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "groupingA": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "groupingB": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "groupingC": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "groupingD": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "barcode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "zone",
+      "tap_stream_id": "zone",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "warehouse",
+      "tap_stream_id": "warehouse",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "typeDescription": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "addressId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "shipping_method",
+      "tap_stream_id": "shipping_method",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "goods_movement",
+      "tap_stream_id": "goods_movement",
+      "schema": {
+        "properties": {
+          "goodsMovementId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "productId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "salesOrderRowId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "purchaseOrderRowId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "quantity": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "destinationLocationId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "goodsNoteId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "productValue": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currencyCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "isCleared": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "isQuarantine": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "batchId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "goodsNoteTypeCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "goodsMovementId"
+      ],
+      "replication_key": "goodsMovementId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "product_availability",
+      "tap_stream_id": "product_availability",
+      "schema": {
+        "properties": {
+          "product_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "stock": {
+            "type": [
+              "object"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "product_id"
+      ],
+      "replication_key": "product_id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "tax_code",
+      "tap_stream_id": "tax_code",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "rate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "supplier_payment",
+      "tap_stream_id": "supplier_payment",
+      "schema": {
+        "properties": {
+          "paymentId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "transactionRef": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "paymentMethodCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "paymentType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "currencyId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "currencyCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "amountPaid": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "paymentDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "journalId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "paymentId"
+      ],
+      "replication_key": "paymentId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "journal",
+      "tap_stream_id": "journal",
+      "schema": {
+        "properties": {
+          "journalId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "journalType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "invoiceReference": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "channelId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "nominalCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "journalDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "journalDebit": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "journalCredit": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "journalRef": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "currencyId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "exchangeRate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "transactionDebit": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "transactionCredit": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "projectId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "leadSourceId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "contactId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "journalDueDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "journalDateEntered": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdContactId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "taxCodeId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "taxReconciliationDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "taxPeriodId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "journalRowId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "journalId"
+      ],
+      "replication_key": "journalId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "exchange_rate",
+      "tap_stream_id": "exchange_rate",
+      "schema": {
+        "properties": {
+          "currencyId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "rateActiveFrom": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "rate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "addedById": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "currencyId"
+      ],
+      "replication_key": "currencyId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "customer_payment",
+      "tap_stream_id": "customer_payment",
+      "schema": {
+        "properties": {
+          "paymentId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "transactionRef": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "transactionCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "paymentMethodCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "paymentType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "currencyId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "currencyCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "amountAuthorized": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "amountPaid": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "expires": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "paymentDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "journalId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "paymentId"
+      ],
+      "replication_key": "paymentId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "currency",
+      "tap_stream_id": "currency",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "title": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "code": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "symbol": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "exchangeRate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "isDefault": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "exchangeRateVarianceNominalCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "accounting_period",
+      "tap_stream_id": "accounting_period",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "startDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "endDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "company",
+      "tap_stream_id": "company",
+      "schema": {
+        "properties": {
+          "companyId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "companyId"
+      ],
+      "replication_key": "companyId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "contact",
+      "tap_stream_id": "contact",
+      "schema": {
+        "properties": {
+          "contactId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "primaryEmail": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "secondaryEmail": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "tertiaryEmail": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "firstName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "lastName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "isSupplier": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "companyName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "isStaff": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "isCustomer": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "updatedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "lastContactedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "lastOrderedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "nominalCode": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "isPrimary": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "pri": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "sec": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "mob": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "exactCompanyName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "title": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "contactId"
+      ],
+      "replication_key": "contactId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "contact_group",
+      "tap_stream_id": "contact_group",
+      "schema": {
+        "properties": {
+          "contactGroupId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "numberOfMembers": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "contactGroupId"
+      ],
+      "replication_key": "contactGroupId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "contact_group_member",
+      "tap_stream_id": "contact_group_member",
+      "schema": {
+        "properties": {
+          "contactId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "firstName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "lastName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "contactGroupId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "contactGroupName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "contactGroupDescription": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "contactId"
+      ],
+      "replication_key": "contactId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "lead_source",
+      "tap_stream_id": "lead_source",
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "ownerId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "parentId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "isActive": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "id"
+      ],
+      "replication_key": "id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "goods_out_search",
+      "tap_stream_id": "goods_out_search",
+      "schema": {
+        "properties": {
+          "goodsOutNoteId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "printed": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "picked": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "packed": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "shipped": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "shippedOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "shippingMethodId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "priority": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "createdOn": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "releaseDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "createdBy": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "labelUri": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "channelId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "transfer": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "goodsOutNoteId"
+      ],
+      "replication_key": "goodsOutNoteId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "goods_in_search",
+      "tap_stream_id": "goods_in_search",
+      "schema": {
+        "properties": {
+          "purchaseOrderId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "batchId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "userBatchRef": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "productId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "locationId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "groupingA": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "groupingB": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "groupingC": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "groupingD": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "price": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "landedCosts": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currCode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "receivedQuantity": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "onHand": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "createdDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "receivedDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "warehouseId": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "purchaseOrderId"
+      ],
+      "replication_key": "purchaseOrderId",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "goods_note_out",
+      "tap_stream_id": "goods_note_out",
+      "schema": {
+        "properties": {
+          "goods_note_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "goods_note": {
+            "type": [
+              "object"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "goods_note_id"
+      ],
+      "replication_key": "goods_note_id",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "goods_note_in",
+      "tap_stream_id": "goods_note_in",
+      "schema": {
+        "properties": {
+          "goods_note_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "goods_note": {
+            "type": [
+              "object"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "goods_note_id"
+      ],
+      "replication_key": "goods_note_id",
+      "replication_method": "FULL_TABLE"
+    }
+  ]
+}
