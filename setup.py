@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="tap-brightpearl",
-    version="0.0.1",
+    version="0.1.0",
     description="Singer.io tap for extracting Brightpearl data",
     author="Adilson",
     url="http://github.com/Zookal/tap-brightpearl",
@@ -28,8 +28,8 @@ setup(
     tap-brightpearl=tap_brightpearl:main
     """,
     packages=["tap_brightpearl"],
-#    package_data = {
-#        "schemas": ["tap_brightpearl/schemas/*.json"]
-#    },
+    package_data = {
+        "tap_brightpearl": ["schemas/*.json"]
+    },
     include_package_data=True,
 )
