@@ -4,12 +4,8 @@ from tap_brightpearl.context import Context
 
 
 class Stream():
+
     resource = {
-        "product": {"url_path": "product-service/product-search","state_filter":"updatedOn"},
-    }
-
-
-    resourceX = {
         "brand": {"url_path": "product-service/brand-search"},
         "product": {"url_path": "product-service/product-search"},
 
