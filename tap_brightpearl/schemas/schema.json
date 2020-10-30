@@ -3649,6 +3649,62 @@
       ],
       "replication_key": "goods_note_id",
       "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "product_idset",
+      "tap_stream_id": "product_idset",
+      "schema": {
+        "properties": {
+          "getUris": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "getUris"
+      ],
+      "replication_key": "getUris",
+      "replication_method": "FULL_TABLE"
+    },
+    {
+      "stream": "order_idset",
+      "tap_stream_id": "order_idset",
+      "schema": {
+        "properties": {
+          "getUris": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": false
+          }
+        }
+      ],
+      "key_properties": [
+        "getUris"
+      ],
+      "replication_key": "getUris",
+      "replication_method": "FULL_TABLE"
     }
   ]
 }

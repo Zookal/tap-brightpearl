@@ -1,6 +1,6 @@
 import singer
 from singer import metadata
-
+from datetime import datetime, timedelta
 
 LOGGER = singer.get_logger()
 
@@ -42,4 +42,22 @@ class Context():
                         Context.config['results_per_page'],
                         default_results_per_page)
         return results_per_page
+
+    @classmethod
+    def get_bookmark(cls, stream_name):
+        return cls.state.get('bookmarks', {}).get(stream_name, {})
+
+    @classmethod
+    def get_state_value(cls, stream_name, field):
+        bookmark = cls.get_bookmark(stream_name)
+        back_in_days = Context.config.get("incremental_back_days",0)
+        state_value = bookmark.get(field, "")
+        if state_value:
+            DT_FORMAT="%Y-%m-%dT%H:%M:%S.%f%z"
+            state_value = (datetime.strptime(state_value,DT_FORMAT)-timedelta(days=back_in_days)).strftime(DT_FORMAT)
+        return state_value
+
+    @classmethod
+    def set_state_value(cls, stream_name, field, value):
+        cls.state['bookmarks'].update({stream_name:{field:value}})
 
