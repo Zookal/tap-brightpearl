@@ -126,7 +126,7 @@ class Stream():
     def __init__(self, entity):
         self.entity = entity
 
-    def get_uris(self, first_result=1, lastResult=500):
+    def get_uris(self, first_result=1, lastResult=500, discovery=False):
         """
         Either get the URI list from a proper service on BP API or
         build a mimic one with incremental from the search emdpoints
@@ -139,7 +139,7 @@ class Stream():
         :return:
         """
 
-        if "depending_on_incremental" not in self.resource[self.entity]:
+        if discovery or "depending_on_incremental" not in self.resource[self.entity]:
             get_urls = Context.session.get_data(url_path=self.resource[self.entity]["depending_on"],
                                                 firstResult=first_result, lastResult=lastResult, method="OPTIONS")
         else:
@@ -210,7 +210,7 @@ class Stream():
             search_param = self.resource[self.entity]["search_param"]
 
         if "depending_on" in self.resource[self.entity]:
-            get_urls = self.get_uris(first_result, lastResult)
+            get_urls = self.get_uris(first_result, lastResult, discovery)
 
             for url in get_urls["getUris"]:
                 # getting values from url only
